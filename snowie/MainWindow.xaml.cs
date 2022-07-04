@@ -27,7 +27,7 @@ namespace snowie
 
         private void textbox1_TextChanged(object sender, TextChangedEventArgs e)
         {
-
+            
         }
 
         private void Button_Click1(object sender, RoutedEventArgs e)

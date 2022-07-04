@@ -10,8 +10,14 @@
 
     <Grid Background="White">
         <Label Content="Enter your name:" HorizontalAlignment="Center" Margin="0,166,0,0" VerticalAlignment="Top" Height="59" Width="280" FontSize="36" Background="{x:Null}" Foreground="#FF5A5A5A" FlowDirection="LeftToRight"/>
-        <TextBox x:Name="nameTextBox" HorizontalAlignment="Left" Height="28" Margin="260,230,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="243" TextChanged="TextBox_TextChanged" SelectionOpacity="1" BorderBrush="#FF83A2FF" Foreground="Black" AutomationProperties.HelpText="NAME"/>
-        <Button x:Name="button97802345" Content="-&gt;" HorizontalAlignment="Left" Margin="508,230,0,0" VerticalAlignment="Top" Background="#FFCCFEFF" UseLayoutRounding="False" Height="28" Width="26" IsDefault="True" Click="StartGame">
+        <TextBox x:Name="nameTextBox" HorizontalAlignment="Left" Height="28" Margin="260,230,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="243" TextChanged="TextBox_TextChanged" SelectionOpacity="1" BorderBrush="#FFC7C7C7" Foreground="Black" AutomationProperties.HelpText="NAME" InputScope="Default">
+        <TextBox.Resources>
+            <Style TargetType="Border">
+                <Setter Property="CornerRadius" Value="5"/>
+            </Style>
+        </TextBox.Resources>
+        </TextBox>
+        <Button x:Name="button97802345" Content="-&gt;" HorizontalAlignment="Left" Margin="508,230,0,0" VerticalAlignment="Top" Background="#FFD4D4D4" UseLayoutRounding="False" Height="28" Width="26" IsDefault="True" Click="StartGame">
             <Button.Style>
                 <Style/>
             </Button.Style>

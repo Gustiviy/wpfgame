@@ -21,7 +21,7 @@ namespace snowie
     {
         public mytime()
         {
-            InitializeComponent();
+            InitializeComponent();  
         }
     }
 }

@@ -27,7 +27,7 @@ namespace snowie
 
         private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
         {
-            Application.Current.Properties["PlayerName"] = nameTextBox.Text;
+           GLOBAL.PlayerName = nameTextBox.Text;
         }
 
         private void StartGame(object sender, RoutedEventArgs e)
@@ -35,8 +35,15 @@ namespace snowie
             mytime mytime = new mytime();
             mytime.Show();
             MainWindow.GetWindow(this).Close();
+            if (GLOBAL.PlayerName.ToLower() == "mytime")
+            {
+                mytime.WindowState = WindowState.Maximized;
+                mytime.WindowStyle = WindowStyle.None;
+            };
 
             
         }
+
+
     }
 }

@@ -5,12 +5,13 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:snowie"
         mc:Ignorable="d"
-        Title="SNOWIE GAME v0.0.1" Height="450" Width="800" ResizeMode="NoResize">
+        Title="MY TIME v0.0.1" Height="450" Width="800" ResizeMode="NoResize">
     <Grid>
         <Grid.Background>
             <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-                <GradientStop Color="#FFFFB9B9"/>
-                <GradientStop Color="#FFFF7777" Offset="1"/>
+                <GradientStop Color="#FF5D5D5D"/>
+                <GradientStop Color="#FF5A5959" Offset="0.492"/>
+                <GradientStop Color="White" Offset="0.988"/>
             </LinearGradientBrush>
         </Grid.Background>
         <Button Content="Launch" HorizontalAlignment="Left" Margin="10,45,0,0" VerticalAlignment="Top" Background="White" UseLayoutRounding="False" Height="30" Width="57" IsDefault="True" Click="Button_Click1">
@@ -22,17 +23,16 @@
             </Button.Style>
             <Button.Resources>
                 <Style TargetType="Border">
-                    <Setter Property="CornerRadius" Value="5"/>
+                    <Setter Property="CornerRadius" Value="3"/>
                 </Style>
             </Button.Resources>
         </Button>
-        <Label Content="Snowie Game 0.0.1" HorizontalAlignment="Left" Height="30" Margin="10,10,0,0" VerticalAlignment="Top" Width="114">
-            <Label.Background>
-                <RadialGradientBrush>
-                    <GradientStop Color="#FFE9FFCA"/>
-                    <GradientStop Color="#FFC0CEAB" Offset="1"/>
-                </RadialGradientBrush>
-            </Label.Background>
+        <Label Content="MY Time 0.0.1" HorizontalAlignment="Left" Height="30" Margin="10,10,0,0" VerticalAlignment="Top" Width="114" Background="#FFCCCCCC">
+            <Label.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="2"/>
+                </Style>
+            </Label.Resources>
         </Label>
     </Grid>
 </Window>
