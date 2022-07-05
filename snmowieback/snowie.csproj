@@ -1,0 +1,27 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows10.0.22000.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+    <ApplicationIcon>gustiviooy.ico</ApplicationIcon>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="FO7tJS5XEAcgLRU_cropped.png" />
+    <None Remove="unknown4.png" />
+    <None Remove="Untitled.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="gustiviooy.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="FO7tJS5XEAcgLRU_cropped.png" />
+    <Resource Include="unknown4.png" />
+    <Resource Include="Untitled.png" />
+  </ItemGroup>
+
+</Project>

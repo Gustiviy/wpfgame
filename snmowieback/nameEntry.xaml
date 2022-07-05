@@ -1,0 +1,32 @@
+﻿<Page x:Class="snowie.nameEntry"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:snowie"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="Enter your name">
+
+    <Grid Background="White">
+        <Label Content="Enter your name:" HorizontalAlignment="Center" Margin="0,166,0,0" VerticalAlignment="Top" Height="59" Width="280" FontSize="36" Background="{x:Null}" Foreground="#FF5A5A5A" FlowDirection="LeftToRight"/>
+        <TextBox x:Name="nameTextBox" HorizontalAlignment="Left" Height="28" Margin="260,230,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="243" TextChanged="TextBox_TextChanged" SelectionOpacity="1" BorderBrush="#FFC7C7C7" Foreground="Black" AutomationProperties.HelpText="NAME" InputScope="Default">
+        <TextBox.Resources>
+            <Style TargetType="Border">
+                <Setter Property="CornerRadius" Value="5"/>
+            </Style>
+        </TextBox.Resources>
+        </TextBox>
+        <Button x:Name="button97802345" Content="-&gt;" HorizontalAlignment="Left" Margin="508,230,0,0" VerticalAlignment="Top" Background="#FFD4D4D4" UseLayoutRounding="False" Height="28" Width="26" IsDefault="True" Click="StartGame">
+            <Button.Style>
+                <Style/>
+            </Button.Style>
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="5"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+
+    </Grid>
+</Page>
