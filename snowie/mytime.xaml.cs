@@ -21,7 +21,8 @@ namespace snowie
     {
         public mytime()
         {
-            InitializeComponent();  
+            InitializeComponent();
+            labelname.Content = GLOBAL.PlayerName;
         }
     }
 }

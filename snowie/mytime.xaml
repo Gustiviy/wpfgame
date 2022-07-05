@@ -6,14 +6,17 @@
         xmlns:local="clr-namespace:snowie"
         mc:Ignorable="d"
         Title="MY TIME" Height="600" Width="600" ResizeMode="NoResize">
-    <Grid Opacity="0.2">
-        <Grid.Effect>
-            <BlurEffect Radius="30"/>
-        </Grid.Effect>
-        <Grid.Background>
-            <ImageBrush ImageSource="/Untitled.png" Stretch="UniformToFill"/>
-        </Grid.Background>
-        <Label x:Name="hello_man" HorizontalAlignment="Left" Height="67" Margin="10,10,0,0" VerticalAlignment="Top" Width="193" Content="{}"/>
 
+    <Grid Opacity="1"  ScrollViewer.VerticalScrollBarVisibility="Disabled">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="13*"/>
+            <ColumnDefinition Width="12*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.Background>
+            <ImageBrush ImageSource="/Untitled.png" Stretch="UniformToFill" Opacity="0.2"/>
+        </Grid.Background>
+        <Label x:Name="labelname" Content="Label" HorizontalAlignment="Left" Height="64" VerticalAlignment="Top" Width="215" Panel.ZIndex="12" Foreground="White" FontFamily="Cascadia Code Light" FontSize="16" Margin="10,0,0,0"/>
+        <Rectangle HorizontalAlignment="Left" Height="39" Stroke="Black" VerticalAlignment="Top" Width="2580" Grid.ColumnSpan="2" Fill="Black" Margin="-626,0,0,0"/>
     </Grid>
+
 </Window>
