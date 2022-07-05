@@ -20,6 +20,8 @@ namespace snowie
     /// </summary>
     public partial class MainWindow : Window
     {
+        private MediaPlayer mediaPlayer = new MediaPlayer();
+
         public MainWindow()
         {
             InitializeComponent();
@@ -32,6 +34,8 @@ namespace snowie
 
         private void Button_Click1(object sender, RoutedEventArgs e)
         {
+            mediaPlayer.Open(new Uri("C:\\Users\\frank\\source\\repos\\snowie\\snowie\\click.wav"));
+            mediaPlayer.Play();
             MessageBoxResult result;
             result = MessageBox.Show("Continue?", "Snowie Game v0.0.1", MessageBoxButton.OKCancel, MessageBoxImage.Question);
             switch(result)
@@ -39,9 +43,12 @@ namespace snowie
                 case MessageBoxResult.OK:
                     nameEntry page = new nameEntry();
                     this.Content = page;
+                    mediaPlayer.Open(new Uri("C:\\Users\\frank\\source\\repos\\snowie\\snowie\\click.wav"));
+                    mediaPlayer.Play();
                     break;
                 case MessageBoxResult.Cancel:
-
+                    mediaPlayer.Open(new Uri("C:\\Users\\frank\\source\\repos\\snowie\\snowie\\click.wav"));
+                    mediaPlayer.Play();
                     break;
             }
         }

@@ -10,6 +10,7 @@
 
   <ItemGroup>
     <None Remove="FO7tJS5XEAcgLRU_cropped.png" />
+    <None Remove="sans.png" />
     <None Remove="unknown4.png" />
     <None Remove="Untitled.png" />
   </ItemGroup>
@@ -19,7 +20,12 @@
   </ItemGroup>
 
   <ItemGroup>
+    <PackageReference Include="NAudio" Version="2.1.0" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Resource Include="FO7tJS5XEAcgLRU_cropped.png" />
+    <Resource Include="sans.png" />
     <Resource Include="unknown4.png" />
     <Resource Include="Untitled.png" />
   </ItemGroup>

@@ -20,27 +20,42 @@ namespace snowie
     /// </summary>
     public partial class nameEntry : Page
     {
+        private MediaPlayer mediaPlayer = new MediaPlayer();
         public nameEntry()
         {
             InitializeComponent();
+            
         }
 
         private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
         {
            GLOBAL.PlayerName = nameTextBox.Text;
+            mediaPlayer.Open(new Uri("C:\\Users\\frank\\source\\repos\\snowie\\snowie\\tap.wav"));
+            mediaPlayer.Play();
+           
+           
         }
 
         private void StartGame(object sender, RoutedEventArgs e)
         {
-            mytime mytime = new mytime();
-            mytime.Show();
-            MainWindow.GetWindow(this).Close();
-            if (GLOBAL.PlayerName.ToLower() == "mytime")
+            if (GLOBAL.PlayerName == null)
             {
+                MessageBox.Show("Name cannot be null.");
+            }
+            else if (GLOBAL.PlayerName.ToLower() == "mytime")
+            {
+                mytime mytime = new mytime();
+                mytime.Show();
+                MainWindow.GetWindow(this).Close();
                 mytime.WindowState = WindowState.Maximized;
                 mytime.WindowStyle = WindowStyle.None;
-            };
+            } else
 
+            {
+                mytime mytime = new mytime();
+                mytime.Show();
+                MainWindow.GetWindow(this).Close();
+            }
             
         }
 
