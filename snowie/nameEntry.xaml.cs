@@ -56,6 +56,11 @@ namespace snowie
                 mytime.Show();
                 MainWindow.GetWindow(this).Close();
             }
+            if (GLOBAL.PlayerName.Length > 16)
+            {
+                string hola = GLOBAL.PlayerName.Substring(0, 13);
+                GLOBAL.PlayerName = hola;
+            }
             
         }
 
